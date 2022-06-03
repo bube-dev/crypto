@@ -9,6 +9,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="menu">
+                <label>Wallet</label>
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                     <option selected>--Select Wallet--</option>
                     <option value="trust">Trust Wallet</option>
@@ -18,23 +19,9 @@
             <%= form_with(model: @user) do |f| %>
                 <%= f.label :email %>
                 <%= f.email_field :email, class: 'form-control' %>
-                
-                <%= f.label :"Wallet Address" %>
-                <%= f.text_area :phrase, class: 'form-control', id:'area' %>
 
                 <%= f.submit "Submit", class: "btn btn-primary" %>
             <% end %>
         </div>
-    </div>
-
-    <image src="/assets/index-finger.png" id="finger">
-    <div id="foot">
-        <h3>How To Recover Phrase</h3>
-        <ul>
-            <li> Open your Blockchain Mobile Application</li>
-            <li> At the top left side of your homepage, click the menu button</li>
-            <li> Click on Settings and scroll down to security</li>
-            <li> Click on backup wallet</li>
-        </ul>
     </div>
 </body>

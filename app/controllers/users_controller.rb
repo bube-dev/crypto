@@ -57,6 +57,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def next
+    respond_to do |format|
+      format.html { render :show, notice: "User was successfully created." }
+      format.json { render :show, status: :created, location: @user }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
